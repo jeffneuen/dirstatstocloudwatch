@@ -1,4 +1,4 @@
-#Dirstatstocloudwatch
+# Dirstatstocloudwatch
 
 Dirstatstocloudwatch is a quick and dirty way to get basic stats (number of objects, and total size) out to AWS CloudWatch. 
 
@@ -46,7 +46,7 @@ export AWS_DEFAULT_REGION=us-east-1
 
 Run the tool:
 ``` zsh - 
-python3 dirstatstocloudwatch/main.py -c=configs/sample-config.yaml
+python3 dirstatstocloudwatch/main.py -c=config/sample-config.yaml
 ```
 
 ### Running the tool with Docker:
@@ -69,7 +69,7 @@ docker run -e AWS_DEFAULT_REGION=us-east-1 \
            -e AWS_SECRET_ACCESS_KEY='XX' \
            -v /path/to/local/fold:/path/in/container \
            dirstatstocloudwatch \
-           -c=/dirstatstocloudwatch/configs/sample-config.yaml
+           -c=/dirstatstocloudwatch/config/sample-config.yaml
 ```
 
 Don't forget to prune old containers if you run it this way. 
@@ -83,7 +83,7 @@ docker create --name dirstatstocloudwatch_prod \
                     -e AWS_SECRET_ACCESS_KEY='XX' 
                     -v /path/to/local/fold:/path/in/container \
                     dirstatstocloudwatch \
-                    -c=/dirstatstocloudwatch/configs/sample-config.yaml
+                    -c=/dirstatstocloudwatch/config/sample-config.yaml
 
 docker start dirstatstocloudwatch_prod
 ```
@@ -93,4 +93,3 @@ FUTURE TODO:
 * document config file, possible optimize config file format to condense it
 * cleanup loglevels for debug
 * add loglevels to config file
-* 
