@@ -1,0 +1,10 @@
+directories:
+ - "location": "/tmp"
+   "metric_base_name": "this_doesnt_do_anything"
+   "bytes": True
+   "objects": True
+
+ - "location": "opt/"
+   "metric_base_name": "this_doesnt_do_anything_2"
+   "bytes": True
+   "objects": True
