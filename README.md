@@ -32,8 +32,8 @@ Here's a sample role:
 Before doing this, create a virtual environment using your choice of virtual environment tools, otherwise you'll be installing the dependencies in your base python install, which isn't ideal.
 
 ```zsh -
-git clone your-repo
-cd code/dirstatstocloudwatch
+git clone git@github.com:jeffneuen/dirstatstocloudwatch.git
+cd dirstatstocloudwatch
 pip3 install -r requirements.txt
 ```
 
